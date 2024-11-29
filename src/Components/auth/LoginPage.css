@@ -1,0 +1,174 @@
+/* Style for the login page */
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('C:\Users\Tarun Uggina\Desktop\NjsEjs\React\facultyLeave\facultyleave\login.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title Styling */
+.title-right {
+    display: flex;
+    align-items: center; /* Centered vertically */
+    justify-content: flex-end;
+    padding: 10px; /* Reduced padding to decrease space */
+    height: 100%;
+    position: relative;
+}
+
+.project-title {
+    font-size: 3.5rem; /* Adjusted size to fit better */
+    font-weight: italic; /* Makes the text bold */
+    font-family: 'Dancing Script', cursive;
+    color: #ff6347; /* New color: Tomato red for a fresh look */
+    background: linear-gradient(45deg, #ff6347, #ff4500, #dc143c); /* Warm gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 30px;
+    margin-top: 0; /* Removed extra top margin */
+    text-align: right;
+    animation: blink 7s infinite; /* Adjusted to a quicker blink for more dynamic effect */
+}
+
+/* Blinking effect for the title */
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+/* Form Styling */
+.form-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 40px; /* Reduced padding to bring form closer */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.login-form {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    color: #6a82fb;
+}
+
+/* Label and Input Styles */
+.login-form .form-group label {
+    font-size: 1.2rem;
+    color: #444;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 2px solid #fc5c7d;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.form-control:focus {
+    border-color: #6a82fb;
+    box-shadow: 0 0 10px rgba(106, 130, 251, 0.5);
+}
+
+/* Primary Button with colorful hover effect */
+.btn-primary {
+    background-color: #34ace0;
+    border: none;
+    color: #ffffff;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #33d9b2;
+    transform: scale(1.08);
+}
+
+/* Secondary Button with colorful hover effect */
+.btn-secondary {
+    background-color: #ff793f;
+    border: none;
+    color: #ffffff;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-secondary:hover {
+    background-color: #ff5252;
+    transform: scale(1.08);
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #ff5252;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Register link section with visible text */
+.register-link {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+}
+
+.register-link p {
+    font-size: 1.3rem;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.register-link a {
+    color: #34ace0;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+    color: #ffcc00;
+}

@@ -1,0 +1,172 @@
+/* ProfilePage.css */
+
+/* Ensures the background image covers the entire web page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('C:\Users\Tarun Uggina\Desktop\NjsEjs\React\facultyLeave\facultyleave\profile.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the profile content in the middle of the page */
+.profile-page-container {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 100px auto; /* Centers the form vertically and horizontally */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(5px); /* Adds blur to the background */
+}
+
+h2, h3 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Labels with different colors for a vibrant look */
+.form-group label:nth-child(odd) {
+    color: #ff6f61; /* Coral red for odd labels */
+}
+
+.form-group label:nth-child(even) {
+    color: #ffcc00; /* Yellow for even labels */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #ffffff;
+}
+
+button {
+    background-color: #34ace0;
+    border: none;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #33d9b2;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400%;
+    height: 400%;
+    background: radial-gradient(circle, #ffffff00 10%, #ffcc00 40%, #ffffff00 60%);
+    transition: opacity 0.4s, transform 0.5s;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+}
+
+button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+table {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    color: #ffffff;
+}
+
+table th {
+    background: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+table td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logout-btn {
+    background: #fc427b;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.logout-btn:hover {
+    background: #ff793f;
+    transform: scale(1.05);
+}
+
+/* Hover sparkle effect */
+.logout-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400%;
+    height: 400%;
+    background: radial-gradient(circle, #ff427b 10%, #34ace0 40%, #ff427b 60%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s, opacity 0.5s;
+    opacity: 0;
+}
+
+.logout-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
